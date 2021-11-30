@@ -2,8 +2,8 @@
 import React from "react";
 import { createChart } from "lightweight-charts";
 import equal from "fast-deep-equal";
-import usePrevious from "util/hooks/usePrevious";
-import { mergeDeep } from "util/helpers";
+import usePrevious from "./util/hooks/usePrevious";
+import { mergeDeep } from "./util/helpers";
 
 const BaseChart = (props) => {
     const {
@@ -65,7 +65,7 @@ const BaseChart = (props) => {
         },
     };
 
-    const colors = [
+    const themecolors = [
         "#008FFB",
         "#00E396",
         "#FEB019",
